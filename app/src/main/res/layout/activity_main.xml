@@ -4,13 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
-    <Button
-        android:id="@+id/btn_upload_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload Photo"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"/>
 
     <ImageView
         android:id="@+id/image_preview"
@@ -19,12 +12,21 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         android:contentDescription="Student photo preview"
-        android:src="@drawable/ic_launcher_foreground"/>
+        android:src="@drawable/ic_launcher_background"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btn_upload_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Telecharger la Photo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nom :" />
+        android:text="Le Nom :" />
 
     <EditText
         android:id="@+id/nom"
@@ -34,7 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prenom :" />
+        android:text="Le Prenom :" />
 
     <EditText
         android:id="@+id/prenom"
@@ -44,7 +46,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date de Naissance :" />
+        android:text="La Date de Naissance :" />
 
     <EditText
         android:id="@+id/date_naiss"
@@ -60,10 +62,17 @@
         android:text="Valider"
         android:layout_gravity="center_horizontal" />
 
+    <Button
+        android:id="@+id/find_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Afficher La liste" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID Etudiant :" />
+        android:text="L'ID de Etudiant :" />
 
     <EditText
         android:id="@+id/id"
@@ -76,13 +85,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chercher"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:id="@+id/find_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Find All"
         android:layout_gravity="center_horizontal" />
 
     <TextView
